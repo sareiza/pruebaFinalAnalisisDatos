@@ -1,0 +1,11 @@
+# # Dependencias para el pipeline ETL
+# psycopg2-binary==2.9.9
+# pandas==2.2.2
+# sqlalchemy==2.0.30
+
+
+# Dependencias para el pipeline ETL
+# Sin versiones fijas para respetar las que Airflow 3.2.2 ya trae
+psycopg2-binary
+pandas
+sqlalchemy
