@@ -9,3 +9,6 @@
 psycopg2-binary
 pandas
 sqlalchemy
+
+# Necesario para leer online_retail_II.xlsx (no viene incluido en la imagen base)
+openpyxl

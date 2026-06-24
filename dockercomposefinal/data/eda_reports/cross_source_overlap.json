@@ -1,0 +1,26 @@
+{
+  "date_overlap": {
+    "source1_range": [
+      "2010-12-01T08:26:00",
+      "2011-12-09T12:50:00"
+    ],
+    "source2_range": [
+      "2009-12-01T07:45:00",
+      "2011-12-09T12:50:00"
+    ],
+    "has_overlap": true,
+    "overlap_start": "2010-12-01T08:26:00",
+    "overlap_end": "2011-12-09T12:50:00",
+    "source1_records_in_overlap_window": 538801
+  },
+  "duplicate_keys_between_sources": 531225,
+  "combined_unique_codes": 4950,
+  "codes_only_in_source1": 0,
+  "codes_only_in_source2": 992,
+  "codes_in_both_sources": 3958,
+  "description_consistency": {
+    "codes_compared": 3958,
+    "consistent_count": 3888,
+    "inconsistent_count": 70
+  }
+}

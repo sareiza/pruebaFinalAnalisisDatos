@@ -1,0 +1,108 @@
+{
+  "generated_at": "2026-06-24T00:54:26.702777",
+  "source1": {
+    "profile_path": "/opt/airflow/data/eda_reports/source1_profile.json",
+    "rejected_path": "/opt/airflow/data/eda_reports/source1_rejected.csv",
+    "canonical_descriptions_path": "/opt/airflow/data/staging/source1_canonical_descriptions.csv",
+    "nulls": {
+      "Country": 0,
+      "Quantity": 0,
+      "InvoiceNo": 0,
+      "StockCode": 0,
+      "UnitPrice": 0,
+      "CustomerID": 135080,
+      "Description": 1454,
+      "InvoiceDate": 0
+    },
+    "rejected_count": 11805
+  },
+  "source2": {
+    "profile_path": "/opt/airflow/data/eda_reports/source2_profile.json",
+    "rejected_path": "/opt/airflow/data/eda_reports/source2_rejected.csv",
+    "canonical_descriptions_path": "/opt/airflow/data/staging/source2_canonical_descriptions.csv",
+    "nulls": {
+      "Price": 0,
+      "Country": 0,
+      "Invoice": 0,
+      "Quantity": 0,
+      "StockCode": 0,
+      "Customer ID": 243007,
+      "Description": 4382,
+      "InvoiceDate": 0,
+      "SourceSheet": 0
+    },
+    "rejected_count": 25700,
+    "compatibility_with_source1": {
+      "date_format_note": "fuente1 es texto m/d/Y H:M, fuente2 es datetime nativo de Excel",
+      "column_name_diffs": {
+        "price": {
+          "source1": "UnitPrice",
+          "source2": "Price",
+          "same_name": false
+        },
+        "country": {
+          "source1": "Country",
+          "source2": "Country",
+          "same_name": true
+        },
+        "invoice": {
+          "source1": "InvoiceNo",
+          "source2": "Invoice",
+          "same_name": false
+        },
+        "quantity": {
+          "source1": "Quantity",
+          "source2": "Quantity",
+          "same_name": true
+        },
+        "stock_code": {
+          "source1": "StockCode",
+          "source2": "StockCode",
+          "same_name": true
+        },
+        "customer_id": {
+          "source1": "CustomerID",
+          "source2": "Customer ID",
+          "same_name": false
+        },
+        "description": {
+          "source1": "Description",
+          "source2": "Description",
+          "same_name": true
+        },
+        "invoice_date": {
+          "source1": "InvoiceDate",
+          "source2": "InvoiceDate",
+          "same_name": true
+        }
+      },
+      "date_format_matches": false
+    }
+  },
+  "cross_source": {
+    "date_overlap": {
+      "has_overlap": true,
+      "overlap_end": "2011-12-09T12:50:00",
+      "overlap_start": "2010-12-01T08:26:00",
+      "source1_range": [
+        "2010-12-01T08:26:00",
+        "2011-12-09T12:50:00"
+      ],
+      "source2_range": [
+        "2009-12-01T07:45:00",
+        "2011-12-09T12:50:00"
+      ],
+      "source1_records_in_overlap_window": 538801
+    },
+    "codes_in_both_sources": 3958,
+    "codes_only_in_source1": 0,
+    "codes_only_in_source2": 992,
+    "combined_unique_codes": 4950,
+    "description_consistency": {
+      "codes_compared": 3958,
+      "consistent_count": 3888,
+      "inconsistent_count": 70
+    },
+    "duplicate_keys_between_sources": 531225
+  }
+}

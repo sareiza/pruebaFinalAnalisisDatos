@@ -1,0 +1,171 @@
+{
+  "source": "online_retail_II.xlsx (Year 2009-2010 + Year 2010-2011)",
+  "row_count": 1067371,
+  "schema": {
+    "Invoice": "string",
+    "StockCode": "string",
+    "Description": "object",
+    "Quantity": "int64",
+    "InvoiceDate": "datetime64[ns]",
+    "Price": "float64",
+    "Customer ID": "float64",
+    "Country": "object",
+    "SourceSheet": "object"
+  },
+  "nulls": {
+    "Invoice": 0,
+    "StockCode": 0,
+    "Description": 4382,
+    "Quantity": 0,
+    "InvoiceDate": 0,
+    "Price": 0,
+    "Customer ID": 243007,
+    "Country": 0,
+    "SourceSheet": 0
+  },
+  "missing_customer_id": 243007,
+  "quantity": {
+    "non_positive_count": 22950,
+    "min": -80995.0,
+    "max": 80995.0,
+    "mean": 9.9388984711033
+  },
+  "price": {
+    "non_positive_count": 6207,
+    "min": -53594.36,
+    "max": 38970.0,
+    "mean": 4.64938772741624
+  },
+  "stock_code": {
+    "unique_codes": 5305,
+    "non_numeric_codes_count": 1715,
+    "starts_with_letter_count": 62,
+    "non_numeric_examples": [
+      "10002R",
+      "10123C",
+      "10123G",
+      "10124A",
+      "10124C",
+      "10124G",
+      "15044A",
+      "15044B",
+      "15044C",
+      "15044D",
+      "15056BL",
+      "15056N",
+      "15056P",
+      "15056bl",
+      "15056n",
+      "15056p",
+      "15058A",
+      "15058B",
+      "15058C",
+      "15059A"
+    ]
+  },
+  "dates": {
+    "min_date": "2009-12-01T07:45:00",
+    "max_date": "2011-12-09T12:50:00",
+    "days_covered": 738,
+    "raw_format": "datetime64 nativo de Excel (ya parseado)"
+  },
+  "country": {
+    "distinct_countries": 43,
+    "distribution": {
+      "United Kingdom": 981330,
+      "EIRE": 17866,
+      "Germany": 17624,
+      "France": 14330,
+      "Netherlands": 5140,
+      "Spain": 3811,
+      "Switzerland": 3189,
+      "Belgium": 3123,
+      "Portugal": 2620,
+      "Australia": 1913,
+      "Channel Islands": 1664,
+      "Italy": 1534,
+      "Norway": 1455,
+      "Sweden": 1364,
+      "Cyprus": 1176,
+      "Finland": 1049,
+      "Austria": 938,
+      "Denmark": 817,
+      "Unspecified": 756,
+      "Greece": 663,
+      "Japan": 582,
+      "Poland": 535,
+      "USA": 535,
+      "United Arab Emirates": 500,
+      "Israel": 371,
+      "Hong Kong": 364,
+      "Singapore": 346,
+      "Malta": 299,
+      "Iceland": 253,
+      "Canada": 228,
+      "Lithuania": 189,
+      "RSA": 169,
+      "Bahrain": 126,
+      "Brazil": 94,
+      "Thailand": 76,
+      "Korea": 63,
+      "European Community": 61,
+      "Lebanon": 58,
+      "West Indies": 54,
+      "Bermuda": 34,
+      "Nigeria": 32,
+      "Czech Republic": 30,
+      "Saudi Arabia": 10
+    }
+  },
+  "compatibility_with_source1": {
+    "column_name_diffs": {
+      "invoice": {
+        "source1": "InvoiceNo",
+        "source2": "Invoice",
+        "same_name": false
+      },
+      "stock_code": {
+        "source1": "StockCode",
+        "source2": "StockCode",
+        "same_name": true
+      },
+      "description": {
+        "source1": "Description",
+        "source2": "Description",
+        "same_name": true
+      },
+      "quantity": {
+        "source1": "Quantity",
+        "source2": "Quantity",
+        "same_name": true
+      },
+      "invoice_date": {
+        "source1": "InvoiceDate",
+        "source2": "InvoiceDate",
+        "same_name": true
+      },
+      "price": {
+        "source1": "UnitPrice",
+        "source2": "Price",
+        "same_name": false
+      },
+      "customer_id": {
+        "source1": "CustomerID",
+        "source2": "Customer ID",
+        "same_name": false
+      },
+      "country": {
+        "source1": "Country",
+        "source2": "Country",
+        "same_name": true
+      }
+    },
+    "date_format_matches": false,
+    "date_format_note": "fuente1 es texto m/d/Y H:M, fuente2 es datetime nativo de Excel"
+  },
+  "description_variations": {
+    "codes_with_multiple_descriptions": 1214,
+    "max_variations_for_a_code": 9
+  },
+  "rejected_count": 25700
+}

@@ -1,0 +1,118 @@
+{
+  "source": "data.csv",
+  "row_count": 541909,
+  "schema": {
+    "InvoiceNo": "string",
+    "StockCode": "string",
+    "Description": "object",
+    "Quantity": "int64",
+    "InvoiceDate": "datetime64[ns]",
+    "UnitPrice": "float64",
+    "CustomerID": "float64",
+    "Country": "object"
+  },
+  "nulls": {
+    "InvoiceNo": 0,
+    "StockCode": 0,
+    "Description": 1454,
+    "Quantity": 0,
+    "InvoiceDate": 0,
+    "UnitPrice": 0,
+    "CustomerID": 135080,
+    "Country": 0
+  },
+  "missing_customer_id": 135080,
+  "quantity": {
+    "non_positive_count": 10624,
+    "min": -80995.0,
+    "max": 80995.0,
+    "mean": 9.55224954743324
+  },
+  "price": {
+    "non_positive_count": 2517,
+    "min": -11062.06,
+    "max": 38970.0,
+    "mean": 4.611113626088514
+  },
+  "stock_code": {
+    "unique_codes": 4070,
+    "non_numeric_codes_count": 1124,
+    "starts_with_letter_count": 33,
+    "non_numeric_examples": [
+      "10123C",
+      "10123G",
+      "10124A",
+      "10124G",
+      "15044A",
+      "15044B",
+      "15044C",
+      "15044D",
+      "15056BL",
+      "15056N",
+      "15056P",
+      "15056bl",
+      "15056n",
+      "15056p",
+      "15058A",
+      "15058B",
+      "15058C",
+      "15060B",
+      "15060b",
+      "16020C"
+    ]
+  },
+  "dates": {
+    "min_date": "2010-12-01T08:26:00",
+    "max_date": "2011-12-09T12:50:00",
+    "days_covered": 373,
+    "raw_format": "texto '%m/%d/%Y %H:%M', ej: '12/1/2010 8:26'"
+  },
+  "country": {
+    "distinct_countries": 38,
+    "distribution": {
+      "United Kingdom": 495478,
+      "Germany": 9495,
+      "France": 8557,
+      "EIRE": 8196,
+      "Spain": 2533,
+      "Netherlands": 2371,
+      "Belgium": 2069,
+      "Switzerland": 2002,
+      "Portugal": 1519,
+      "Australia": 1259,
+      "Norway": 1086,
+      "Italy": 803,
+      "Channel Islands": 758,
+      "Finland": 695,
+      "Cyprus": 622,
+      "Sweden": 462,
+      "Unspecified": 446,
+      "Austria": 401,
+      "Denmark": 389,
+      "Japan": 358,
+      "Poland": 341,
+      "Israel": 297,
+      "USA": 291,
+      "Hong Kong": 288,
+      "Singapore": 229,
+      "Iceland": 182,
+      "Canada": 151,
+      "Greece": 146,
+      "Malta": 127,
+      "United Arab Emirates": 68,
+      "European Community": 61,
+      "RSA": 58,
+      "Lebanon": 45,
+      "Lithuania": 35,
+      "Brazil": 32,
+      "Czech Republic": 30,
+      "Bahrain": 19,
+      "Saudi Arabia": 10
+    }
+  },
+  "description_variations": {
+    "codes_with_multiple_descriptions": 647,
+    "max_variations_for_a_code": 8
+  },
+  "rejected_count": 11805
+}
